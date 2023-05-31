@@ -8,9 +8,10 @@ jobs:
     # операционная система для работы воркфлоу
     runs-on: ubuntu-latest
     steps:
-      - name: my_job
+      - name: Check_out_repository_code
         uses: actions/checkout@v3
       # run – произвольная bash-команда
       # ls -la выведет содержимое текущего репозитория
-      - run: make say-hello
+      - name: say_hello
+        run: make say-hello
         
