@@ -10,8 +10,7 @@ jobs:
     steps:
       - name: Check_out_repository_code
         uses: actions/checkout@v3
-      # run – произвольная bash-команда
-      # ls -la выведет содержимое текущего репозитория
+        
       - name: say_hello
-        run: make say-hello
+        run: ls
         
